@@ -5,20 +5,8 @@ export async function generateStaticParams() {
     id: path.id,
   }));
 }
-export async function generateStaticProps({
-  params,
-}: {
-  params: { id: string };
-}) {
-  return {
-    props: {
-      id: params.id,
-    },
-    revalidate: 30,
-  };
-}
 
-export default async function Page({ params }: { params: { id: string } }) {
+export default function Page({ params }: { params: { id: string } }) {
   const id = params.id;
 
   return (
