@@ -1,7 +1,82 @@
+import Navbar from "./navbar";
+import Navbardesc from "./navbardesc";
+import Header from "./Header";
+import Cards from "./Cards";
+import SalonCard from "./saloncards";
+
 import BeautySalonCards from "./Components/BeautySalonCards";
 import Header from "./Header";
 
 export default function Home() {
+  const searchTerms = ["کاشت ناخن", "ژلیش ناخن", "سعادت آباد"];
+
+  const beautySalons = [
+    {
+      name: "سالن زیبایی مریم مولایی",
+      rating: 0.5,
+      reviews: 1076,
+      location: "سعادت آباد، تهران",
+      category: "آرایشگاه زنانه",
+      imageUrl: "/image/saloncards.png",
+    },
+    {
+      name: "سالن زیبایی مریم مولایی",
+      rating: 0.5,
+      reviews: 1076,
+      location: "سعادت آباد، تهران",
+      category: "آرایشگاه زنانه",
+      imageUrl: "/image/saloncards.png",
+    },
+    {
+      name: "سالن زیبایی مریم مولایی",
+      rating: 0.5,
+      reviews: 1076,
+      location: "سعادت آباد، تهران",
+      category: "آرایشگاه زنانه",
+      imageUrl: "/image/saloncards.png",
+    },
+    {
+      name: "سالن زیبایی مریم مولایی",
+      rating: 0.5,
+      reviews: 1076,
+      location: "سعادت آباد، تهران",
+      category: "آرایشگاه زنانه",
+      imageUrl: "/image/saloncards.png",
+    },
+    {
+      name: "سالن زیبایی مریم مولایی",
+      rating: 0.5,
+      reviews: 1076,
+      location: "سعادت آباد، تهران",
+      category: "آرایشگاه زنانه",
+      imageUrl: "/image/saloncards.png",
+    },
+    {
+      name: "سالن زیبایی مریم مولایی",
+      rating: 0.5,
+      reviews: 1076,
+      location: "سعادت آباد، تهران",
+      category: "آرایشگاه زنانه",
+      imageUrl: "/image/saloncards.png",
+    },
+    {
+      name: "سالن زیبایی مریم مولایی",
+      rating: 0.5,
+      reviews: 1076,
+      location: "سعادت آباد، تهران",
+      category: "آرایشگاه زنانه",
+      imageUrl: "/image/saloncards.png",
+    },
+    {
+      name: "سالن زیبایی مریم مولایی",
+      rating: 0.5,
+      reviews: 1076,
+      location: "سعادت آباد، تهران",
+      category: "آرایشگاه زنانه",
+      imageUrl: "/image/saloncards.png",
+    },
+  ];
+
   const services = [
     "کاشت ناخن",
     "ژلیش ناخن",
@@ -146,7 +221,7 @@ export default function Home() {
   ];
 
   return (
-    <div className="px-[18px] flex flex-col justify-center">
+    <div className="px-[18px] flex flex-col justify-center rtl ">
       <Header services={services} LinkPages={LinkPages} />
       <BeautySalonCards beautySalonCardsData={beautySalonCardsData} />
     </div>
