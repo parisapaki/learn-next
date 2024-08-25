@@ -1,8 +1,13 @@
+
 import Navbar from "./navbar";
 import Navbardesc from "./navbardesc";
-// import Header from "./Header";
-// import Cards from "./Cards";
+ import Header from "./Header";
+ import Cards from "./Cards";
 import SalonCard from "./saloncards";
+
+import BeautySalonCards from "./Components/BeautySalonCards";
+import Header from "./Header";
+
 
 export default function Home() {
   const searchTerms = ["کاشت ناخن", "ژلیش ناخن", "سعادت آباد"];
@@ -87,122 +92,138 @@ export default function Home() {
   ];
   const LinkPages = ["خانه", "کاشت ناخن", "ژلیش ناخن سعادت آباد"];
 
-  const cardsData = [
+  const beautySalonCardsData = [
     {
-      image: "/1.png",
+      image: "/image/beauty-salon.png",
       title: "سالن سارا فرهادی",
       rating: "۴.۲",
       location: "تهران، سعادت آباد، بلوار دریا",
+      id: 1,
+      services: [
+        {
+          service: "ژلیش ناخن",
+          price: "۴۵۰,۰۰۰ تومان",
+          time: 45,
+        },
+        {
+          service: "ژلیش ناخن",
+          price: "۴۵۰,۰۰۰ تومان",
+          time: 45,
+        },
+        {
+          service: "ژلیش ناخن",
+          price: "۴۵۰,۰۰۰ تومان",
+          time: 45,
+        },
+      ],
+      comments: "۱۸۰ نظر",
+    },
+    {
+      image: "/image/salon-hair.png",
+      title: "سالن سارا فرهادی",
+      rating: "۴.۲",
+      location: "تهران، سعادت آباد، بلوار دریا",
+      id: 2,
+      services: [
+        {
+          service: "ژلیش ناخن",
+          price: "۴۵۰,۰۰۰ تومان",
+          time: 45,
+        },
+        {
+          service: "ژلیش ناخن",
+          price: "۴۵۰,۰۰۰ تومان",
+          time: 45,
+        },
+        {
+          service: "ژلیش ناخن",
+          price: "۴۵۰,۰۰۰ تومان",
+          time: 45,
+        },
+      ],
+      comments: "۱۸۰ نظر",
+    },
+    {
+      image: "/image/fingernail.png",
+      title: "سالن سارا فرهادی",
+      rating: "۴.۲",
+      location: "تهران، سعادت آباد، بلوار دریا",
+      id: 3,
+      services: [
+        {
+          service: "ژلیش ناخن",
+          price: "۴۵۰,۰۰۰ تومان",
+          time: 45,
+        },
+        {
+          service: "ژلیش ناخن",
+          price: "۴۵۰,۰۰۰ تومان",
+          time: 45,
+        },
+        {
+          service: "ژلیش ناخن",
+          price: "۴۵۰,۰۰۰ تومان",
+          time: 45,
+        },
+      ],
+      comments: "۱۸۰ نظر",
+    },
+    {
+      image: "/image/beauty-salon.png",
+      title: "سالن سارا فرهادی",
+      rating: "۴.۲",
+      location: "تهران، سعادت آباد، بلوار دریا",
+      id: 4,
+      services: [
+        {
+          service: "ژلیش ناخن",
+          price: "۴۵۰,۰۰۰ تومان",
+          time: 45,
+        },
+        {
+          service: "ژلیش ناخن",
+          price: "۴۵۰,۰۰۰ تومان",
+          time: 45,
+        },
+        {
+          service: "ژلیش ناخن",
+          price: "۴۵۰,۰۰۰ تومان",
+          time: 45,
+        },
+      ],
+      comments: "۱۸۰ نظر",
+    },
+    {
+      image: "/image/salon-hair.png",
+      title: "سالن سارا فرهادی",
+      rating: "۴.۲",
+      location: "تهران، سعادت آباد، بلوار دریا",
+      id: 6,
       services: [],
       comments: "۱۸۰ نظر",
     },
     {
-      image: "/2.png",
+      image: "/image/fingernail.png",
       title: "سالن سارا فرهادی",
       rating: "۴.۲",
       location: "تهران، سعادت آباد، بلوار دریا",
-      services: [
-        {
-          service: "ژلیش ناخن",
-          price: "۴۵۰,۰۰۰ تومان",
-          time: 45,
-        },
-        {
-          service: "ژلیش ناخن",
-          price: "۴۵۰,۰۰۰ تومان",
-          time: 45,
-        },
-        {
-          service: "ژلیش ناخن",
-          price: "۴۵۰,۰۰۰ تومان",
-          time: 45,
-        },
-      ],
+      id: 7,
+      services: [],
       comments: "۱۸۰ نظر",
     },
     {
-      image: "/3.png",
+      image: "/image/salon-hair.png",
       title: "سالن سارا فرهادی",
       rating: "۴.۲",
       location: "تهران، سعادت آباد، بلوار دریا",
-      services: [
-        {
-          service: "ژلیش ناخن",
-          price: "۴۵۰,۰۰۰ تومان",
-          time: 45,
-        },
-        {
-          service: "ژلیش ناخن",
-          price: "۴۵۰,۰۰۰ تومان",
-          time: 45,
-        },
-        {
-          service: "ژلیش ناخن",
-          price: "۴۵۰,۰۰۰ تومان",
-          time: 45,
-        },
-      ],
-      comments: "۱۸۰ نظر",
-    },
-    {
-      image: "/1.png",
-      title: "سالن سارا فرهادی",
-      rating: "۴.۲",
-      location: "تهران، سعادت آباد، بلوار دریا",
-      services: [
-        {
-          service: "ژلیش ناخن",
-          price: "۴۵۰,۰۰۰ تومان",
-          time: 45,
-        },
-        {
-          service: "ژلیش ناخن",
-          price: "۴۵۰,۰۰۰ تومان",
-          time: 45,
-        },
-        {
-          service: "ژلیش ناخن",
-          price: "۴۵۰,۰۰۰ تومان",
-          time: 45,
-        },
-      ],
-      comments: "۱۸۰ نظر",
-    },
-    {
-      image: "/2.png",
-      title: "سالن سارا فرهادی",
-      rating: "۴.۲",
-      location: "تهران، سعادت آباد، بلوار دریا",
-      services: [
-        {
-          service: "ژلیش ناخن",
-          price: "۴۵۰,۰۰۰ تومان",
-          time: 45,
-        },
-        {
-          service: "ژلیش ناخن",
-          price: "۴۵۰,۰۰۰ تومان",
-          time: 45,
-        },
-        {
-          service: "ژلیش ناخن",
-          price: "۴۵۰,۰۰۰ تومان",
-          time: 45,
-        },
-      ],
-      comments: "۱۸۰ نظر",
-    },
-    {
-      image: "/3.png",
-      title: "سالن سارا فرهادی",
-      rating: "۴.۲",
-      location: "تهران، سعادت آباد، بلوار دریا",
+      id: 8,
       services: [],
       comments: "۱۸۰ نظر",
     },
   ];
 
   return (
+
     < div >
       <div>
       <Navbar searchTerms={searchTerms} />
@@ -210,9 +231,14 @@ export default function Home() {
       </div>
       <div  className="flex flex-col p-[18px] justify-center rtl ">
       <SalonCard beautySalons={beautySalons} />
-      {/* <Header services={services} LinkPages={LinkPages} />
-      <Cards cardsData={cardsData} /> */}
+       <Header services={services} LinkPages={LinkPages} />
+      <Cards cardsData={cardsData} /> 
     </div>
+
+    <div className="px-[18px] flex flex-col justify-center rtl ">
+      <Header services={services} LinkPages={LinkPages} />
+      <BeautySalonCards beautySalonCardsData={beautySalonCardsData} />
+
     </div>
   );
 }
