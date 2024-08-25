@@ -1,9 +1,16 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Header({ services, LinkPages }) {
   return (
     <div className="pt-7 truncate">
-      <img src="salon20.svg" alt="" className="rounded-lg m-1 p-1.5 inline" />
+      <Image
+        src="/svg/20.svg"
+        alt=""
+        width={50}
+        height={50}
+        className="rounded-lg m-1 p-1.5 inline"
+      />
       <div className="text-sm inline m-2 py-8">
         {LinkPages.map((item, index) => (
           <Link href="#" key={index}>

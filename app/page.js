@@ -1,4 +1,4 @@
-import Cards from "./Cards";
+import BeautySalonCards from "./Components/BeautySalonCards";
 import Header from "./Header";
 
 export default function Home() {
@@ -15,8 +15,7 @@ export default function Home() {
   ];
   const LinkPages = ["خانه", "کاشت ناخن", "ژلیش ناخن سعادت آباد"];
 
-  const cardsDataWithServices = [
- 
+  const beautySalonCardsData = [
     {
       image: "/image/beauty-salon.png",
       title: "سالن سارا فرهادی",
@@ -111,49 +110,41 @@ export default function Home() {
           time: 45,
         },
       ],
+      comments: "۱۸۰ نظر",
+    },
+    {
+      image: "/image/salon-hair.png",
+      title: "سالن سارا فرهادی",
+      rating: "۴.۲",
+      location: "تهران، سعادت آباد، بلوار دریا",
+      services: [],
+      comments: "۱۸۰ نظر",
+    },
+    {
+      image: "/image/fingernail.png",
+      title: "سالن سارا فرهادی",
+      rating: "۴.۲",
+      location: "تهران، سعادت آباد، بلوار دریا",
+      services: [],
+      comments: "۱۸۰ نظر",
+    },
+    {
+      image: "/image/salon-hair.png",
+      title: "سالن سارا فرهادی",
+      rating: "۴.۲",
+      location: "تهران، سعادت آباد، بلوار دریا",
+      services: [],
       comments: "۱۸۰ نظر",
     },
   ];
-  const cardsDataWithoutServices = [
-    {
-      image: "/image/salon-hair.png",
-      title: "سالن سارا فرهادی",
-      rating: "۴.۲",
-      location: "تهران، سعادت آباد، بلوار دریا",
-      services: [],
-      comments: "۱۸۰ نظر",
-    },
-    {
-      image: "/image/fingernail.png",
-      title: "سالن سارا فرهادی",
-      rating: "۴.۲",
-      location: "تهران، سعادت آباد، بلوار دریا",
-      services: [],
-      comments: "۱۸۰ نظر",
-    },
-    {
-      image: "/image/salon-hair.png",
-      title: "سالن سارا فرهادی",
-      rating: "۴.۲",
-      location: "تهران، سعادت آباد، بلوار دریا",
-      services: [],
-      comments: "۱۸۰ نظر",
-    },
-
-  ]
 
   return (
-    <div className="px-[18px] flex flex-col justify-center rtl ">
+    <div
+      className="px-[18px] flex flex-col justify-center rtl "
+      style={{ fontFamily: "IRANSansX" }}
+    >
       <Header services={services} LinkPages={LinkPages} />
-      <div className="inline">
-      <Cards cardsData={cardsDataWithServices}  className="inline"/>
-      <Cards cardsData={cardsDataWithoutServices} className="inline"/>
-      <div className="flex justify-center my-12">
-        <button className="border border-[#7E7E7E] text-[#7E7E7E] rounded-lg px-3 py-1 mt-4">
-          مشاهده بیشتر
-        </button>
-      </div>
-       </div>
+      <BeautySalonCards beautySalonCardsData={beautySalonCardsData} />
     </div>
   );
 }
