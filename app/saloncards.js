@@ -9,7 +9,7 @@ const SalonCard = ({ beautySalons }) => {
   return (
     <div className="overflow-x-hidden mx-4 ">
       <h1 className="text-2xl my-4 font-bold text-right mx-3 truncate ">
-      !   برای وقت دهی تماس بگیرید 
+        ! برای وقت دهی تماس بگیرید
       </h1>
       <div className="flex overflow-x-auto mx-2 custom-scrollbar ">
         {beautySalons.map((salon, idx) => (
@@ -18,7 +18,7 @@ const SalonCard = ({ beautySalons }) => {
             className="min-w-[250px] max-w-xs bg-white rounded-lg border border-gray-300 overflow-hidden my-10 mx-2"
           >
             <div className="relative">
-              <Image 
+              <Image
                 src={salon.imageUrl}
                 alt={salon.name}
                 width={500}
@@ -28,17 +28,18 @@ const SalonCard = ({ beautySalons }) => {
             </div>
             <div className="p-4 rtl text-right">
               <h3 className="text-lg font-semibold">{salon.name}</h3>
-              <div className="flex justify-end mt-2 text-right rtl">
-                <span className="text-gray-600">
-                  ({toPersianDigits(salon.reviews)})
-                </span>
-                <span className="text-yellow-500">★</span>
+              <div className="flex mt-2 text-right rtl">
                 <span className="text-black">
                   {toPersianDigits(salon.rating)}
                 </span>
+                <span className="text-yellow-500 ps-1">★</span>
+
+                <span className="text-gray-600">
+                  ({toPersianDigits(salon.reviews)})
+                </span>
               </div>
               <p className="text-gray-600 mt-2">{salon.location}</p>
-              <button className="mt-4 w-full py-2 bg-white rounded-lg border border-gray-300">
+              <button className="flex mt-4 py-2 justify-start items-center px-2 bg-white rounded-lg border border-gray-300">
                 {salon.category}
               </button>
             </div>
@@ -50,4 +51,3 @@ const SalonCard = ({ beautySalons }) => {
 };
 
 export default SalonCard;
-

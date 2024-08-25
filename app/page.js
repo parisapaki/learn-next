@@ -218,9 +218,16 @@ export default function Home() {
   ];
 
   return (
-    <div className="px-[18px] flex flex-col justify-center rtl ">
-      <Header services={services} LinkPages={LinkPages} />
-      <BeautySalonCards beautySalonCardsData={beautySalonCardsData} />
+    <div className="">
+      <div>
+        <Navbar searchTerms={searchTerms} />
+        <Navbardesc />
+      </div>
+      <div className="px-[18px] flex flex-col justify-center">
+        <Header services={services} LinkPages={LinkPages} />
+        <BeautySalonCards beautySalonCardsData={beautySalonCardsData} />
+        <SalonCard beautySalons={beautySalons} />
+      </div>
     </div>
   );
 }

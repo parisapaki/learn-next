@@ -11,12 +11,15 @@ const Navbar = ({ searchTerms }) => {
             <Image
               src="/svg/searchmob.svg"
               alt="salon20 search logo"
-              width={40}
-              height={40}
+              width={26}
+              height={26}
             />
           </Link>
-          <div className="flex flex-row w-[70%]">
-            <Link href="#" className=" w-[100%] truncate ${index === 0 ? 'font-bold' : ''}">
+          <div className="flex flex-row w-[70%] text-gray-400">
+            <Link
+              href="#"
+              className=" w-[100%] truncate ${index === 0 ? 'font-bold' : ''}"
+            >
               {searchTerms.join(" . ")}
             </Link>
           </div>
