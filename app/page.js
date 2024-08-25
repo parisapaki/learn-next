@@ -21,6 +21,7 @@ export default function Home() {
       title: "سالن سارا فرهادی",
       rating: "۴.۲",
       location: "تهران، سعادت آباد، بلوار دریا",
+      id: 1,
       services: [
         {
           service: "ژلیش ناخن",
@@ -45,6 +46,7 @@ export default function Home() {
       title: "سالن سارا فرهادی",
       rating: "۴.۲",
       location: "تهران، سعادت آباد، بلوار دریا",
+      id: 2,
       services: [
         {
           service: "ژلیش ناخن",
@@ -69,6 +71,7 @@ export default function Home() {
       title: "سالن سارا فرهادی",
       rating: "۴.۲",
       location: "تهران، سعادت آباد، بلوار دریا",
+      id: 3,
       services: [
         {
           service: "ژلیش ناخن",
@@ -93,6 +96,7 @@ export default function Home() {
       title: "سالن سارا فرهادی",
       rating: "۴.۲",
       location: "تهران، سعادت آباد، بلوار دریا",
+      id: 4,
       services: [
         {
           service: "ژلیش ناخن",
@@ -117,6 +121,7 @@ export default function Home() {
       title: "سالن سارا فرهادی",
       rating: "۴.۲",
       location: "تهران، سعادت آباد، بلوار دریا",
+      id: 6,
       services: [],
       comments: "۱۸۰ نظر",
     },
@@ -125,6 +130,7 @@ export default function Home() {
       title: "سالن سارا فرهادی",
       rating: "۴.۲",
       location: "تهران، سعادت آباد، بلوار دریا",
+      id: 7,
       services: [],
       comments: "۱۸۰ نظر",
     },
@@ -133,16 +139,14 @@ export default function Home() {
       title: "سالن سارا فرهادی",
       rating: "۴.۲",
       location: "تهران، سعادت آباد، بلوار دریا",
+      id: 8,
       services: [],
       comments: "۱۸۰ نظر",
     },
   ];
 
   return (
-    <div
-      className="px-[18px] flex flex-col justify-center rtl "
-      style={{ fontFamily: "IRANSansX" }}
-    >
+    <div className="px-[18px] flex flex-col justify-center rtl ">
       <Header services={services} LinkPages={LinkPages} />
       <BeautySalonCards beautySalonCardsData={beautySalonCardsData} />
     </div>

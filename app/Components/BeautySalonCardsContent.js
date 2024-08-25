@@ -1,8 +1,16 @@
 import React from "react";
 import Image from "next/image";
-import FormatTime from "@/public/Functions/FormatTime";
 
 export default function BeautySalonCardsContent({ beautySalonCardsData }) {
+  const FormatTime = (time) => {
+    const hours = Math.floor(time / 60);
+    const minutes = time % 60;
+    const persianHours = hours.toLocaleString("fa-IR");
+    const persianMinutes = minutes.toLocaleString("fa-IR");
+    return `${hours > 0 ? `${persianHours} ساعت` : ""} ${
+      minutes > 0 ? `${persianMinutes} دقیقه` : ""
+    }`.trim();
+  };
   return (
     <div className="pb-4 flex flex-col">
       <ul className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -62,7 +70,7 @@ export default function BeautySalonCardsContent({ beautySalonCardsData }) {
                 ))}
               </div>
               {services.length > 0 && (
-                <button className="text-[#7351E7] p-2 pb-4">
+                <button className="text-[#7351E7] p-2 pb-4 font-bold">
                   مشاهده بیشتر
                 </button>
               )}
