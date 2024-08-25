@@ -1,11 +1,8 @@
 import Navbar from "./navbar";
 import Navbardesc from "./navbardesc";
 import Header from "./Header";
-import Cards from "./Cards";
 import SalonCard from "./saloncards";
-
 import BeautySalonCards from "./Components/BeautySalonCards";
-import Header from "./Header";
 
 export default function Home() {
   const searchTerms = ["کاشت ناخن", "ژلیش ناخن", "سعادت آباد"];
