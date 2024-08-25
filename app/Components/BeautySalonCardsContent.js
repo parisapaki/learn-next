@@ -5,7 +5,7 @@ import FormatTime from "@/public/functions/FormatTime";
 export default function BeautySalonCardsContent({ beautySalonCardsData }) {
   <FormatTime />;
   return (
-    <div className="pb-4 flex flex-col">
+    <div className="pb-4 flex flex-col rtl">
       <ul className="grid grid-cols-1 md:grid-cols-3 gap-6">
         {beautySalonCardsData.map(
           ({ image, title, rating, location, comments, services, id }) => (

@@ -146,7 +146,7 @@ export default function Home() {
   ];
 
   return (
-    <div className="px-[18px] flex flex-col justify-center rtl ">
+    <div className="px-[18px] flex flex-col justify-center">
       <Header services={services} LinkPages={LinkPages} />
       <BeautySalonCards beautySalonCardsData={beautySalonCardsData} />
     </div>

@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Header({ services, LinkPages }) {
   return (
-    <div className="pt-7 truncate">
+    <div className="pt-7 truncate rtl">
       <Image
         src="/svg/20.svg"
         alt=""
