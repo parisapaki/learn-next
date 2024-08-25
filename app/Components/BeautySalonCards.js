@@ -16,7 +16,7 @@ export default function BeautySalonCards({ beautySalonCardsData }) {
         beautySalonCardsData={cardsDataWithoutServices}
       />
       <div className="flex justify-center my-12">
-        <button className="border border-[#7E7E7E] text-[#7E7E7E] rounded-lg px-3 py-1 mt-4">
+        <button className="border border-[#7E7E7E] text-[#7E7E7E] font-semibold rounded-lg px-4 py-2 mt-4">
           مشاهده بیشتر
         </button>
       </div>

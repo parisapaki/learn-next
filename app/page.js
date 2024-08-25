@@ -1,13 +1,8 @@
-
 import Navbar from "./navbar";
 import Navbardesc from "./navbardesc";
- import Header from "./Header";
- import Cards from "./Cards";
-import SalonCard from "./saloncards";
-
-import BeautySalonCards from "./Components/BeautySalonCards";
 import Header from "./Header";
-
+import SalonCard from "./saloncards";
+import BeautySalonCards from "./Components/BeautySalonCards";
 
 export default function Home() {
   const searchTerms = ["کاشت ناخن", "ژلیش ناخن", "سعادت آباد"];
@@ -223,22 +218,9 @@ export default function Home() {
   ];
 
   return (
-
-    < div >
-      <div>
-      <Navbar searchTerms={searchTerms} />
-      <Navbardesc />
-      </div>
-      <div  className="flex flex-col p-[18px] justify-center rtl ">
-      <SalonCard beautySalons={beautySalons} />
-       <Header services={services} LinkPages={LinkPages} />
-      <Cards cardsData={cardsData} /> 
-    </div>
-
     <div className="px-[18px] flex flex-col justify-center rtl ">
       <Header services={services} LinkPages={LinkPages} />
       <BeautySalonCards beautySalonCardsData={beautySalonCardsData} />
-
     </div>
   );
 }
