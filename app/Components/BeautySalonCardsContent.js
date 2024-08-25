@@ -1,16 +1,9 @@
 import React from "react";
 import Image from "next/image";
+import FormatTime from "@/public/functions/FormatTime";
 
 export default function BeautySalonCardsContent({ beautySalonCardsData }) {
-  const FormatTime = (time) => {
-    const hours = Math.floor(time / 60);
-    const minutes = time % 60;
-    const persianHours = hours.toLocaleString("fa-IR");
-    const persianMinutes = minutes.toLocaleString("fa-IR");
-    return `${hours > 0 ? `${persianHours} ساعت` : ""} ${
-      minutes > 0 ? `${persianMinutes} دقیقه` : ""
-    }`.trim();
-  };
+  <FormatTime />;
   return (
     <div className="pb-4 flex flex-col">
       <ul className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -18,7 +11,7 @@ export default function BeautySalonCardsContent({ beautySalonCardsData }) {
           ({ image, title, rating, location, comments, services, id }) => (
             <li
               key={id}
-              className="rounded-lg md:shadow-lg md:overflow-hidden p-4 md:p-0"
+              className="rounded-xl md:shadow-lg md:overflow-hidden p-4 md:p-0"
             >
               <Image
                 src={image}
@@ -41,8 +34,8 @@ export default function BeautySalonCardsContent({ beautySalonCardsData }) {
                   />
                 </span>
               </div>
-              <div className="flex justify-between p-2 pb-5 truncate">
-                <span className="flex truncate">
+              <div className="flex justify-between p-4 pb-5 truncate">
+                <span className="flex truncate font-medium">
                   <Image
                     src="/svg/location.svg"
                     alt=""
@@ -55,13 +48,13 @@ export default function BeautySalonCardsContent({ beautySalonCardsData }) {
                 </span>
                 <span className="text-[#7E7E7E]">({comments})</span>
               </div>
-              {services.length > 0 && <hr />}
-              <div className="mt-2 text-gray-700 p-2">
+              {services.length > 0 && <hr className="mx-5" />}
+              <div className="mt-2 p-2">
                 {services?.map(({ service, time, price }, i) => (
                   <div key={i} className="flex justify-between mb-2">
                     <div className="p-1 font-bold truncate">
                       {service}
-                      <span className="block text-sm font-normal p-1 text-[#7E7E7E]">
+                      <span className="block text-sm py-2 text-[#7E7E7E]">
                         {FormatTime(time)}
                       </span>
                     </div>
@@ -70,7 +63,7 @@ export default function BeautySalonCardsContent({ beautySalonCardsData }) {
                 ))}
               </div>
               {services.length > 0 && (
-                <button className="text-[#7351E7] p-2 pb-4 font-bold">
+                <button className="text-[#7351E7] p-2 pb-7 font-bold">
                   مشاهده بیشتر
                 </button>
               )}
