@@ -2,20 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
-.rtl {
-  direction: rtl;
-  text-align: right;
-}
-.ltr {
-  direction: ltr;
-  text-align: left;
-}
-
 .custom-scrollbar::-webkit-scrollbar {
   display: none; 
 }
 
-
-
-
-
+@font-face {
+	font-family: IRANSansX;
+	src: url('/fonts/fonts/woff/IRANSansX-Demibold.woff') format('woff'),   
+	url('/fonts/fonts/woff2/IRANSansX-Demibold.woff2') format('woff2');		
+}
+.body{
+  font-family:IRANSansX ; 
+}
