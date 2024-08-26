@@ -3,6 +3,7 @@ import Navbardesc from "./navbardesc";
 import Header from "./Header";
 import SalonCard from "./saloncards";
 import BeautySalonCards from "./Components/BeautySalonCards";
+import CommentCards from "./Components/CommentCards";
 
 export default function Home() {
   const searchTerms = ["کاشت ناخن", "ژلیش ناخن", "سعادت آباد"];
@@ -217,8 +218,95 @@ export default function Home() {
     },
   ];
 
+  const CommentCardsData = [
+    {
+      id: 10,
+      authorRating: 3.2,
+      author: "میترا مولایی",
+      text: "“ با قابلیت باشگاه مشتریان سالن۲۰ میتونم اطلاعاتِ مشتری ها رو داشته باشم و بهشون خدماتِ بهتر ارائه بکنم. با قابلیت باشگاه مشتریان سالن۲۰ میتونم.با قابلیت باشگاه مشتریان سالن۲۰ میتونم ”",
+      profileImage: "/image/ProfileReviews.png",
+      salonsname: "سالن زیبایی مریم مولایی",
+      salonRating: 5.0,
+      salonImage: "/image/beauty-salon.png",
+      location: "تهران ،سعادت آباد",
+      comments: 1760,
+    },
+    {
+      id: 5,
+      authorRating: 4.2,
+      author: "میترا مولایی",
+      text: "“ با قابلیت باشگاه مشتریان سالن۲۰ میتونم اطلاعاتِ مشتری ها رو داشته باشم و بهشون خدماتِ بهتر ارائه بکنم. با قابلیت باشگاه مشتریان سالن۲۰ میتونم.با قابلیت باشگاه مشتریان سالن۲۰ میتونم ”",
+      profileImage: "/image/ProfileReviews.png",
+      salonsname: "سالن زیبایی مریم مولایی",
+      salonRating: 5.0,
+      salonImage: "/image/beauty-salon.png",
+      location: "تهران ،سعادت آباد",
+      comments: 1760,
+    },
+    {
+      id: 2,
+      authorRating: 3.2,
+      author: "میترا مولایی",
+      text: "“ با قابلیت باشگاه مشتریان سالن۲۰ میتونم اطلاعاتِ مشتری ها رو داشته باشم و بهشون خدماتِ بهتر ارائه بکنم. با قابلیت باشگاه مشتریان سالن۲۰ میتونم.با قابلیت باشگاه مشتریان سالن۲۰ میتونم ”",
+      profileImage: "/image/ProfileReviews.png",
+      salonsname: "سالن زیبایی مریم مولایی",
+      salonRating: 5.0,
+      salonImage: "/image/beauty-salon.png",
+      location: "تهران ،سعادت آباد",
+      comments: 1760,
+    },
+    {
+      id: 3,
+      authorRating: 4.2,
+      author: "میترا مولایی",
+      text: "“ با قابلیت باشگاه مشتریان سالن۲۰ میتونم اطلاعاتِ مشتری ها رو داشته باشم و بهشون خدماتِ بهتر ارائه بکنم. با قابلیت باشگاه مشتریان سالن۲۰ میتونم.با قابلیت باشگاه مشتریان سالن۲۰ میتونم ”",
+      profileImage: "/image/ProfileReviews.png",
+      salonsname: "سالن زیبایی مریم مولایی",
+      salonRating: 5.0,
+      salonImage: "/image/beauty-salon.png",
+      location: "تهران ،سعادت آباد",
+      comments: 1760,
+    },
+    {
+      id: 4,
+      authorRating: 4.2,
+      author: "میترا مولایی",
+      text: "“ با قابلیت باشگاه مشتریان سالن۲۰ میتونم اطلاعاتِ مشتری ها رو داشته باشم و بهشون خدماتِ بهتر ارائه بکنم. با قابلیت باشگاه مشتریان سالن۲۰ میتونم.با قابلیت باشگاه مشتریان سالن۲۰ میتونم ”",
+      profileImage: "/image/ProfileReviews.png",
+      salonsname: "سالن زیبایی مریم مولایی",
+      salonRating: 5.0,
+      salonImage: "/image/beauty-salon.png",
+      location: "تهران ،سعادت آباد",
+      comments: 1760,
+    },
+    {
+      id: 6,
+      authorRating: 4.2,
+      author: "میترا مولایی",
+      text: "“ با قابلیت باشگاه مشتریان سالن۲۰ میتونم اطلاعاتِ مشتری ها رو داشته باشم و بهشون خدماتِ بهتر ارائه بکنم. با قابلیت باشگاه مشتریان سالن۲۰ میتونم.با قابلیت باشگاه مشتریان سالن۲۰ میتونم ”",
+      profileImage: "/image/ProfileReviews.png",
+      salonsname: "سالن زیبایی مریم مولایی",
+      salonRating: 5.0,
+      salonImage: "/image/beauty-salon.png",
+      location: "تهران ،سعادت آباد",
+      comments: 1760,
+    },
+    {
+      id: 7,
+      authorRating: 4.2,
+      author: "میترا مولایی",
+      text: "“ با قابلیت باشگاه مشتریان سالن۲۰ میتونم اطلاعاتِ مشتری ها رو داشته باشم و بهشون خدماتِ بهتر ارائه بکنم. با قابلیت باشگاه مشتریان سالن۲۰ میتونم.با قابلیت باشگاه مشتریان سالن۲۰ میتونم ”",
+      profileImage: "/image/ProfileReviews.png",
+      salonsname: "سالن زیبایی مریم مولایی",
+      salonRating: 5.0,
+      salonImage: "/image/beauty-salon.png",
+      location: "تهران ،سعادت آباد",
+      comments: 1760,
+    },
+  ];
+
   return (
-    <div className="">
+    <div>
       <div>
         <Navbar searchTerms={searchTerms} />
         <Navbardesc />
@@ -227,6 +315,7 @@ export default function Home() {
         <Header services={services} LinkPages={LinkPages} />
         <BeautySalonCards beautySalonCardsData={beautySalonCardsData} />
         <SalonCard beautySalons={beautySalons} />
+        <CommentCards CommentCardsData={CommentCardsData} />
       </div>
     </div>
   );
